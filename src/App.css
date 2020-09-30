@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #d2dbdc;
+    font-family: 'Segoe UI', 'Helvetica Neue', 'Lucida Grande', 'Arial', sans-serif;
+}
+
+.app {
+    display: flex;
+    height: 100vh;
+    background: #ededed;
+}
+
+.sidebar {
+    width: 45%;
+    max-width: 415px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #dddddd;
+}
+
+header {
+    padding: 0 15px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+header nav {
+    display: flex;
+}
+
+header .header-navigation-item {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search {
+    background-color: #f6f6f6;
+    border-bottom: 1px solid #eeeeee;
+    padding: 5px 15px;
+}
+
+.search-input {
+    background-color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.search-input input {
+    flex: 1;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    margin-left: 10px;
+}
+
+.conversations {
+    background: #fff;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.conversations::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.conversations::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,.2)
+}
+
+main.conversation-content {
+    flex: 1;
+    height: 100%;
+}

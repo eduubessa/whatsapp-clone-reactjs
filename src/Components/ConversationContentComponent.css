@@ -1,0 +1,105 @@
+div.conversation-content {
+    flex-direction: column;
+    height: 100%;
+    display: flex;
+}
+
+.conversation-content-header {
+    height: 60px;
+    border-bottom: 1px solid #cccccc;
+    display: flex;
+    justify-content: space-between;
+}
+
+.conversation-content-header-info {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.conversation-content-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.conversation-content-username {
+    font-size: 17px;
+    color: #000000;
+}
+
+.conversation-content-header-buttons {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.conversation-content-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.conversation-content-body {
+    flex: 1;
+    overflow-y: auto;
+    background-color: #e5ddd5;
+    background-size: cover;
+    background-position: center;
+    background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
+}
+
+.conversation-content-footer {
+    height: 62px;
+    display: flex;
+    align-items: center;
+}
+
+.conversation-content-footer-pre {
+    display: flex;
+    margin: 0 15px;
+}
+
+.conversation-content-footer-inputarea {
+    flex: 1;
+}
+
+.conversation-content-input {
+    width: 100%;
+    height: 40px;
+    border: 0;
+    outline: 0;
+    background: #fff;
+    border-radius: 20px;
+    font-size: 15px;
+    color: #4a4a4a;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.conversation-content-footer-pos {
+    margin: 0 15px;
+}
+
+.conversation-content-emojis,
+.conversation-content-gifs {
+    height: 200px;
+    overflow-y: hidden;
+    transition: all ease 0.3s;
+}
+
+.emoji-picker-react {
+    width: 100% !important;
+    background: none !important;
+}
+
+.emoji-group:before {
+    background: #EDEDED !important;
+}
